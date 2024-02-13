@@ -43,7 +43,7 @@ header {
     font-weight: 600;
     
 }
-.header-container ul a::after {
+/* .header-container ul a::after {
 	content: url("../images/arrow.png");
 	margin: 0px 0px 0px 10px;
 	height: 100%;
@@ -55,7 +55,7 @@ header {
 	vertical-align: -webkit-baseline-middle;
 	top: 5px;
 	position: absolute;
-}
+} */
 
 .button {
     padding: 0.5rem 3rem;
@@ -69,8 +69,9 @@ ul.navbar-nav {
     justify-content: flex-end;
 }
 .navbar-nav {
-    width: 100%;
-    justify-content: space-between;
+	width: 91%;
+	justify-content: space-between;
+	margin: 0 0 0 auto;
 }
 .navbar li.active > a {
     border-bottom: 3px solid var(--primary-color);
@@ -85,9 +86,12 @@ ul.navbar-nav {
     left: 0;
     display: none;
 }
-header .navbar ul li.hover-effect:focus .submenu {
+.icon_arrow{
+    transition: 0.5s;
+}
+/* header .navbar ul li.hover-effect:focus .submenu {
     display: block;
-} 
+}  */
 
 header .navbar ul li.hover-effect a::after { 
     transition: transform 0.3s ease;
@@ -99,9 +103,9 @@ header .navbar ul li.hover-effect.rotate a::after {
     transform: rotate(180deg);
 }
 
-.show-submenu{
+/* .show-submenu{
     display: block !important;
-}
+} */
 .submenu-container {
     width: 75%;
     margin: 0 auto;
@@ -209,7 +213,7 @@ header .navbar ul li.hover-effect.rotate a::after {
     height: 1046px;
     background: linear-gradient(180deg, #7A3F9D 0%, #7A3F9D 33.33%, #590F85 50%, #2B173F 100%);
     display: flex;
-    padding-top: 80px;
+    padding-top: 63px;
 }
 .footer-container,
 .container-custom {
@@ -218,10 +222,11 @@ header .navbar ul li.hover-effect.rotate a::after {
     margin: 0 auto;
 }
 .main-content {
-    display: flex;
-    height: 100%;
-    /* width: 96%; */
-    justify-content: space-between;
+	display: flex;
+	height: 100%;
+	/* width: 96%; */
+	justify-content: space-between;
+	margin-top: 0px;
 }
 .brand-image {
 	align-self: center;
@@ -241,7 +246,7 @@ header .navbar ul li.hover-effect.rotate a::after {
 	flex-direction: column;
 	/* width: 90%; */
 	/* margin-left: 10%; */
-	margin-top: 188px;
+	margin-top: 280px;
 }
 .branding h1 {
 	color: #fff;

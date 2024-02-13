@@ -1,3 +1,33 @@
+var count = 0; 
+var data_id = 0; 
+var lastClickedDataId = null; 
+
+$(document).on("click","#navbar-list li",function() {
+  
+  data_id = $(this).attr('data-id'); 
+  $('.submenu').css({'display':'none'});
+  $('.icon_arrow').css({'transform':'rotate(0deg)'}); 
+
+  if (count == 1 && data_id == lastClickedDataId) {
+    $('.data_'+data_id).find('.submenu').css({'display':'none'});
+    $('.data_'+data_id).find('.icon_arrow').css({'transform':'rotate(0deg)'});
+    count = 0;
+  } else {  
+    $('.data_'+data_id).find('.submenu').css({'display':'block'});
+    $('.data_'+data_id).find('.icon_arrow').css({'transform':'rotate(180deg)'});
+    count = 1;
+  }
+
+  lastClickedDataId = data_id; 
+});
+
+
+
+
+
+
+
+
 $(document).ready(function() {
     var toggleBtn = $("#navbar-toggle");
     var toggleArea = $("#navbarSupportedContent");
@@ -96,4 +126,11 @@ $(document).ready(function() {
 
 
   });
+  
+
+
+
+
+
+
   
