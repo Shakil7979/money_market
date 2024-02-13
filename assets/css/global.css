@@ -69,7 +69,7 @@ ul.navbar-nav {
     justify-content: flex-end;
 }
 .navbar-nav {
-	width: 91%;
+	width: 95%;
 	justify-content: space-between;
 	margin: 0 0 0 auto;
 }
@@ -241,6 +241,14 @@ header .navbar ul li.hover-effect.rotate a::after {
     position: relative;
     top: 50px;
 }
+
+#navbar-list .nav-link {
+	display: flex;
+	gap: 12px;
+	align-items: center;
+}
+
+
 .branding {
 	display: flex;
 	flex-direction: column;
