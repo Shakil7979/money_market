@@ -93,6 +93,7 @@ header .navbar ul li.hover-effect a::after {
     transition: transform 0.3s ease;
 }
 
+
 /* Apply rotation */
 header .navbar ul li.hover-effect.rotate a::after {
     transform: rotate(180deg);
