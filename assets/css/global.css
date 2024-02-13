@@ -575,6 +575,24 @@ header .navbar ul li.hover-effect.rotate a::after {
     .sub-menu {
         flex-direction: column;
     }
+    #navbar-list .nav-link { 
+        margin-left: 30px;
+    }
+    .hero-paragraph--list li { 
+        line-height: 28px;
+    }
+    .footer-container, .container-custom {
+        width: 94%; 
+    }
+    .footer-nav ul { 
+        gap: 8px 27px; 
+    }
+    .branding h1 {
+        width: 95%;
+        margin: 0 auto;
+        line-height: 54px;
+        font-size: 45px;
+    }
     .submenu h2 {
         height: 30px;
     }
