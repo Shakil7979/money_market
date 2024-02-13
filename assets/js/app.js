@@ -78,12 +78,12 @@ $(document).ready(function() {
         emailjs.send(serviceID, templateID, sendmail)
           .then(function() {
             btn.val('Show Exclusive Rates');
-            $("#form-message").text("Thankyou, your submission has been received. You will be contacted by an agent");
+            $("#form-message").text("Thankyou, you will contacted by one of our partners");
             // alert('Thank You!');
             // window.location.replace("/");
-            setTimeout(function() {
-              window.location.assign("https://www.moneysupermarket.com/")
-            }, 3000)
+            // setTimeout(function() {
+            //   window.location.assign("https://www.moneysupermarket.com/")
+            // }, 3000)
           }, function(err) {
             btn.val('Show Exclusive Rates');
             alert(JSON.stringify(err));

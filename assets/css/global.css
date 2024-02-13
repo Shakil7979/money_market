@@ -44,15 +44,17 @@ header {
     
 }
 .header-container ul a::after {
-    content: url("../images/arrow.png");
-    margin: 0px 0px 0px 10px;
-    height: 100%;
-    width: 10px;
-    font-size: 14px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: -webkit-baseline-middle;
+	content: url("../images/arrow.png");
+	margin: 0px 0px 0px 10px;
+	height: 100%;
+	width: 10px;
+	font-size: 14px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: -webkit-baseline-middle;
+	top: 5px;
+	position: absolute;
 }
 
 .button {
@@ -83,9 +85,22 @@ ul.navbar-nav {
     left: 0;
     display: none;
 }
-header .navbar ul li.hover-effect:hover .submenu {
+header .navbar ul li.hover-effect:focus .submenu {
     display: block;
 } 
+
+header .navbar ul li.hover-effect a::after { 
+    transition: transform 0.3s ease;
+}
+
+/* Apply rotation */
+header .navbar ul li.hover-effect.rotate a::after {
+    transform: rotate(180deg);
+}
+
+.show-submenu{
+    display: block !important;
+}
 .submenu-container {
     width: 75%;
     margin: 0 auto;
@@ -195,23 +210,25 @@ header .navbar ul li.hover-effect:hover .submenu {
     display: flex;
     padding-top: 80px;
 }
+.footer-container,
 .container-custom {
-    width: 96%;
+    width: 100%;
+    max-width: 1280px;
     margin: 0 auto;
 }
 .main-content {
     display: flex;
     height: 100%;
-    width: 96%;
+    /* width: 96%; */
     justify-content: space-between;
 }
 .brand-image {
-    align-self: center;
-    width: max(720px);
-    margin-left: -10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+	align-self: center;
+	/* width: max(720px); */
+	/* margin-left: -10px; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .brand-image img {
     width: 100%;
@@ -219,18 +236,19 @@ header .navbar ul li.hover-effect:hover .submenu {
     top: 50px;
 }
 .branding {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 85px;
+	display: flex;
+	flex-direction: column;
+	/* width: 90%; */
+	/* margin-left: 10%; */
+	margin-top: 188px;
 }
 .branding h1 {
-    color: #fff;
-    font-weight: 700;
-    font-size: 65px;
-    line-height: 56px;
-    margin-bottom: 20px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 84px;
+	line-height: 70px;
+	margin-bottom: 20px;
+	width: 80%;
 }
 .branding p {
     color: #fff;
@@ -241,10 +259,11 @@ header .navbar ul li.hover-effect:hover .submenu {
     color: #fff;
     margin-top: 20px;
 }
-.hero-paragraph--list li {
-    margin-block: 20px;
-    font-weight: bold;
-    font-size: 18px;
+
+.hero-paragraph--list li { 
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 61px;
 }
 
 .brand-form {
@@ -313,11 +332,18 @@ header .navbar ul li.hover-effect:hover .submenu {
     font-weight: bold;
 
 }
+
+.footer-contents {
+	position: relative;
+	z-index: 9;
+}
+
 #form-message {
-    font-size: 16px;
-    color: #590F85;
-    font-weight: bold;
-    margin-top: 20px;
+	font-size: 16px;
+	color: #139500;
+	font-weight: bold;
+	margin-top: 20px;
+	text-align: center;
 }
 .button-or {
     border: 1px solid #DADCE0;
@@ -352,10 +378,10 @@ header .navbar ul li.hover-effect:hover .submenu {
     color: #fff;
     padding-top: 150px;
 }
-.footer-container {
+/* .footer-container {
     width: 90% !important;
     margin: 0 auto;
-}
+} */
 .footer-nav ul {
     display: flex;
     list-style: none;
