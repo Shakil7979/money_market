@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneySuperMarket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="assets/css/global.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="icon" href="./assets/images/favicon.ico">
+</head>
+<body>
+    <div id="root">
+        <div class="root-container">
+            <header id="header">
+                <div class="header-container">
+                    <div class="logo">
+                        <a href="/"><img src="./assets/images/logo.svg" alt="logo image"></a>
+                    </div>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" id="navbar-toggle" type="button" data-toggle="collapse2" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle2 navigation2">
+                            <i class='bx bx-menu'></i>
+                        </button>
+                        <div id="dark-div" class="display-none"></div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <div class="logo mobile-logo">
+                                <a href="#"><img src="./assets/images/logo.svg" alt="logo image"></a>
+                                <button id="cross"><img src="./assets/images/close icon.svg" alt="Close"></button>
+                            </div>
+                            <ul class="navbar-nav mr-auto custom-mobile-responsive" id="navbar-list">
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Motoring</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>Car Insurance</h2>
+                                                    <ul>
+                                                        <li><a href="#">Car Insurance</a></li>
+                                                        <li><a href="#">Temporary Car Insurance</a></li>
+                                                        <li><a href="#">Provisional Licence</a></li>
+                                                        <li><a href="#">New Drivers Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2></h2>
+                                                    <ul>
+                                                        <li><a href="#">Young Drivers Insurance</a></li>
+                                                        <li><a href="#">Over 50's Car Insurance</a></li>
+                                                        <li><a href="#">Black Box Insurance</a></li>
+                                                        <li><a href="#">Classic Car Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Other Vehicles</h2>
+                                                    <ul>
+                                                        <li><a href="#">Van Insurance</a></li>
+                                                        <li><a href="#">Motorbike Insurance</a></li>
+                                                        <li><a href="#">Caravan Insurance</a></li>
+                                                        <li><a href="#">Temporary Van Insurance</a></li>
+                                                        <li><a href="#">Motorhome Insurance</a></li>
+                                                        <li><a href="#">Boat Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Vehicle Service</h2>
+                                                    <ul>
+                                                        <li><a href="#">Breakdown Cover</a></li>
+                                                        <li><a href="#">Car Leasing</a></li>
+                                                        <li><a href="#">Gap Insurance</a></li>
+                                                        <li><a href="#">Car Finance</a></li>
+                                                        <li><a href="#">Sell My Car</a></li>
+                                                        <li><a href="#">EV Charging</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Guides & Tools</h2>
+                                                    <ul>
+                                                        <li><a href="#">Car Insurance Groups</a></li>
+                                                        <li><a href="#">Car Insurance Companies</a></li>
+                                                        <li><a href="#">Compare Electric Vehicles</a></li>
+                                                        <li><a href="#">Car Insurance Calculator</a></li>
+                                                        <li><a href="#">Car Insurance Guides</a></li>
+                                                        <li><a href="#">See All Motoring</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </li>
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Insurance</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>For the home</h2>
+                                                    <ul>
+                                                        <li><a href="#">Home Insurance</a></li>
+                                                        <li><a href="#">Buildings Insurance</a></li>
+                                                        <li><a href="#">Contents Insurance</a></li>
+                                                        <li><a href="#">Renters Insurance</a></li>
+                                                        <li><a href="#">Renters Insurance</a></li>
+                                                        <li><a href="#">Non-Standard Home Insurance</a></li>
+                                                        <li><a href="#">Unoccupied Home Insurance</a></li>
+                                                        <li><a href="#">Jewellery Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2></h2>
+                                                    <ul>
+                                                        <li><a href="#">Landlords Insurance</a></li>
+                                                        <li><a href="#">Holiday Home Insurance</a></li>
+                                                        <li><a href="#">Boiler Cover</a></li>
+                                                        <li><a href="#">Appliances Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Life & Income</h2>
+                                                    <ul>
+                                                        <li><a href="#">Life Insurance</a></li>
+                                                        <li><a href="#">Critical Illness Cover</a></li>
+                                                        <li><a href="#">Health Insurance</a></li>
+                                                        <li><a href="#">Over 50's Life Insurance</a></li>
+                                                        <li><a href="#">Income Protection</a></li>
+                                                        <li><a href="#">Funural Plans</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Pet & Lifestyle</h2>
+                                                    <ul>
+                                                        <li><a href="#">Travel Insurance</a></li>
+                                                        <li><a href="#">Per Insurance</a></li>
+                                                        <li><a href="#">Dog Insurance</a></li>
+                                                        <li><a href="#">Cat Insurance</a></li>
+                                                        <li><a href="#">Wedding Insurance</a></li>
+                                                        <li><a href="#">Gadget Insurance</a></li>
+                                                        <li><a href="#">Bicycle Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Guides & Tolls</h2>
+                                                    <ul>
+                                                        <li><a href="#">Life Insurance Calculator</a></li>
+                                                        <li><a href="#">Life Insurance Guides</a></li>
+                                                        <li><a href="#">Home Insurance Calculator</a></li>
+                                                        <li><a href="#">Home Insurance Guides</a></li>
+                                                        <li><a href="#">Per Insurance Guides</a></li>
+                                                        <li><a href="#">See All Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Money</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>Money</h2>
+                                                    <ul>
+                                                        <li><a href="#">Credit Cards</a></li>
+                                                        <li><a href="#">Balance Transfer Cards</a></li>
+                                                        <li><a href="#">Purchase Credit Cards</a></li>
+                                                        <li><a href="#">Prepaid Cards</a></li>
+                                                        <li><a href="#">0% Interest Credit Cards</a></li>
+                                                        <li><a href="#">Credit Building Credit Cards</a></li>
+                                                        <li><a href="#">Bad Credit Credit Cards</a></li>
+                                                        <li><a href="#">Cashback Credit Cards</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Loans</h2>
+                                                    <ul>
+                                                        <li><a href="#">Loans</a></li>
+                                                        <li><a href="#">Car Finance</a></li>
+                                                        <li><a href="#">Personal Loans</a></li>
+                                                        <li><a href="#">Secured Loans</a></li>
+                                                        <li><a href="#">Bad and Refused Credit Loans</a></li>
+                                                        <li><a href="#">Debt Consolidation Loans</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Mortgages</h2>
+                                                    <ul>
+                                                        <li><a href="#">Mortgages</a></li>
+                                                        <li><a href="#">First Time Buyers</a></li>
+                                                        <li><a href="#">Remortgage</a></li>
+                                                        <li><a href="#">Buy-to-Let Mortgages</a></li>
+                                                        <li><a href="#">Conveyancing</a></li>
+                                                        <li><a href="#">Bridging Loans</a></li>
+                                                        <li><a href="#">Equity Release</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Banking & Savings</h2>
+                                                    <ul>
+                                                        <li><a href="#">Current Accounts</a></li>
+                                                        <li><a href="#">Savings Accounts</a></li>
+                                                        <li><a href="#">ISAs</a></li>
+                                                        <li><a href="#">Investments</a></li>
+                                                        <li><a href="#">Stocks and Shares ISAs</a></li>
+                                                        <li><a href="#">Fix Rate Bonds</a></li>
+                                                        <li><a href="#">Travel Money</a></li>
+                                                        <li><a href="#">International Money Transfer</a></li>
+                                                        <li><a href="#">Private Pensions</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Guides & Tools</h2>
+                                                    <ul>
+                                                        <li><a href="#">Credit Score And Report</a></li>
+                                                        <li><a href="#">Loan Calculator</a></li>
+                                                        <li><a href="#">Mortgage Calculator</a></li>
+                                                        <li><a href="#">Credit Card Calculator</a></li>
+                                                        <li><a href="#">Money News Articles</a></li>
+                                                        <li><a href="#">Loans Guides</a></li>
+                                                        <li><a href="#">Credit Card Guides</a></li>
+                                                        <li><a href="#">Mortgage Guides</a></li>
+                                                        <li><a href="#">See All Money</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Energy</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>Energy</h2>
+                                                    <h2>Car Insurance</h2>
+                                                    <ul>
+                                                        <li><a href="#">Compare Gas & Electricity</a></li>
+                                                        <li><a href="#">Compare Gas</a></li>
+                                                        <li><a href="#">Compare Electricity</a></li>
+                                                        <li><a href="#">Prepayment Meters</a></li>
+                                                        <li><a href="#">Green Energy</a></li>
+                                                        <li><a href="#">Solar Power</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2></h2>
+                                                    <ul>
+                                                        <li><a href="#">Boiler Cover</a></li>
+                                                        <li><a href="#">New Biolers</a></li>
+                                                        <li><a href="#">Dual Fuel Tariff</a></li>
+                                                        <li><a href="#">Feed-in Tariff</a></li>
+                                                        <li><a href="#">EV Charging</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Guides & Tools</h2>
+                                                    <ul>
+                                                        <li><a href="#">Energy Monitor</a></li>
+                                                        <li><a href="#">Switch Energy Suppliers</a></li>
+                                                        <li><a href="#">Energy Saving Centre</a></li>
+                                                        <li><a href="#">Energy Guides</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2></h2>
+                                                    <ul>
+                                                        <li><a href="#">Energy Saving Tips</a></li>
+                                                        <li><a href="#">Energy Bills</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Travel</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>Insurance</h2>
+                                                    <ul>
+                                                        <li><a href="">Travel Insurance</a></li>
+                                                        <li><a href="">Pre-existing Medical Travel Insurance</a></li>
+                                                        <li><a href="">Annual Multi-Trip Travel Insurance</a></li>
+                                                        <li><a href="">Over 70's Travel Insurance</a></li>
+                                                        <li><a href="">Worldwide Insurance</a></li>
+                                                        <li><a href="">Backpackers Insurance</a></li>
+                                                        <li><a href="">Family Travel Insurance</a></li>
+                                                        <li><a href="">Winter Sports Travel Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Travel Services</h2>
+                                                    <ul>
+                                                        <li><a href="#">Travel Money</a></li>
+                                                        <li><a href="#">Airline Cards</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Guides</h2>
+                                                    <ul>
+                                                        <li><a href="#">Europe Travel Insurance</a></li>
+                                                        <li><a href="#">Travel Insurance Guides</a></li>
+                                                        <li><a href="#">Destination Guides</a></li>
+                                                        <li><a href="#">Coronavirus and Travel Insurance</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Travelsupermarket.com</h2>
+                                                    <ul>
+                                                        <li><a href="#">Flights</a></li>
+                                                        <li><a href="#">Holidays</a></li>
+                                                        <li><a href="#">All Inclusive Holidays</a></li>
+                                                        <li><a href="#">Last Minute Holidays</a></li>
+                                                        <li><a href="#">UK Holidays</a></li>
+                                                        <li><a href="#">Car Hire</a></li>
+                                                        <li><a href="#">Hotels</a></li>
+                                                        <li><a href="#">Airport Parking</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Broadband</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>Broadband & TV</h2>
+                                                    <ul>
+                                                        <li><a href="#">Broadband Deals</a></li>
+                                                        <li><a href="#">Cheap Broadband Deals</a></li>
+                                                        <li><a href="#">Fibre Broadband Deals</a></li>
+                                                        <li><a href="#">Broadband Packages</a></li>
+                                                        <li><a href="#">Unlimited Broadband Deals</a></li>
+                                                        <li><a href="#">Broadband Only Deals</a></li>
+                                                        <li><a href="#">Broadband & Phone Deals</a></li>
+                                                        <li><a href="#">Broadband & TV Deals</a></li>
+                                                        <li><a href="#">Broadband, Phone & TV Deals</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2></h2>
+                                                    <ul>
+                                                        <li><a href="#">No Upfront Cost Broadband</a></li>
+                                                        <li><a href="#">No Credit Check Broadband</a></li>
+                                                        <li><a href="#">Broadband With Free Gifts</a></li>
+                                                        <li><a href="#">Student Broadband</a></li>
+                                                        <li><a href="#">100MBPS Broadband Deals</a></li>
+                                                        <li><a href="#">Fastest Broadband In My Area</a></li>
+                                                        <li><a href="#">FTTP Broadband Deals</a></li> 
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Broadband Providers</h2>
+                                                    <ul>
+                                                        <li><a href="#">Virgin Broadband Deals</a></li>
+                                                        <li><a href="#">BT Broadband Deals</a></li>
+                                                        <li><a href="#">TalkTalk Broadband Deals</a></li>
+                                                        <li><a href="#">Plusnet Broadband Deals</a></li>
+                                                        <li><a href="#">Vodafone Broadband Deals</a></li>
+                                                        <li><a href="#">Sky Broadband Deals</a></li>
+                                                        <li><a href="#">Shell Energy Broadband Deals</a></li>
+                                                        <li><a href="#">Now Broadband Deals</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Guides & Tools</h2>
+                                                    <ul>
+                                                        <li><a href="#">Business Broadband</a></li>
+                                                        <li><a href="#">Broadband Guides</a></li>
+                                                        <li><a href="#">Broadband Providers</a></li>
+                                                        <li><a href="#">Broadband Postcode Checker</a></li>
+                                                        <li><a href="#">Take a Broadband Speed Test</a></li>
+                                                        <li><a href="#">Fibre Broadband Explained</a></li>
+                                                        <li><a href="#">Upgrade Your Broadband To Work From Home</a></li>
+                                                        <li><a href="#">Why Is My Internet So Slow?</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Mobile Phones</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>Mobile phones</h2>
+                                                    <ul>
+                                                        <li><a href="#">Mobile Phone Deals</a></li>
+                                                        <li><a href="#">No Upfront Cost Phone Deals</a></li>
+                                                        <li><a href="#">Bad Credit Phone Deals</a></li>
+                                                        <li><a href="#">iPhone Deals</a></li>
+                                                        <li><a href="#">Samsung Deals</a></li>
+                                                        <li><a href="#">Recycle your Old Mobile Phone</a></li>
+                                                        <li><a href="#">Mobile Phone Retailers</a></li>
+                                                        <li><a href="#">Mobile Phone Networks</a></li>
+                                                        <li><a href="#">Mobile Phone Insurance</a></li>  
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Sim Only</h2>
+                                                    <ul>
+                                                        <li><a href="#">SIM Only Deals</a></li>
+                                                        <li><a href="#">Unlimited Data SIM Deals</a></li>
+                                                        <li><a href="#">5G SIM Only Deals</a></li>
+                                                        <li><a href="#">Cheap SIM Only Deals</a></li>
+                                                        <li><a href="#">12 Month SIM Only Deals</a></li>
+                                                        <li><a href="#">Bad Credit SIM Only Deals</a></li>
+                                                        <li><a href="#">30 Day SIM Deals</a></li>
+                                                        <li><a href="#">Pay As You Go SIM Deals</a></li>
+                                                        <li><a href="#">Data Only SIM Deals</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Networks</h2>
+                                                    <ul>
+                                                        <li><a href="#">Three SIM Only Deals</a></li>
+                                                        <li><a href="#">O2 SIM Only Deals</a></li>
+                                                        <li><a href="#">Lebara SIM Only Deals</a></li>
+                                                        <li><a href="#">iD Mobile SIM Only Deals</a></li>
+                                                        <li><a href="#">giffgaff SIM Only Deals</a></li>
+                                                        <li><a href="#">Vodafone SIM Only Deals</a></li>
+                                                        <li><a href="#">Virgin Mobile SIM Only Deals</a></li>
+                                                        <li><a href="#">VOXI SIM Only Deals</a></li>
+                                                        <li><a href="#">SMARTY SIM Only Deals</a></li>
+                                                        <li><a href="#">Talkmobile SIM Only Deals</a></li>  
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Handset Deals</h2>
+                                                    <ul>
+                                                        <li><a href="#">iPhone 14 Deals</a></li>
+                                                        <li><a href="#">iPhone 14 Pro Deals</a></li>
+                                                        <li><a href="#">iPhone 14 Pro Max Deals</a></li>
+                                                        <li><a href="#">iPhone 14 Plus Deals</a></li>
+                                                        <li><a href="#">iPhone 13 Deals</a></li>
+                                                        <li><a href="#">iPhone 13 Pro Max Deals</a></li>
+                                                        <li><a href="#">iPhone 12 Deals</a></li>
+                                                        <li><a href="#">iPhone 12 Pro Max Deals</a></li>
+                                                        <li><a href="#">iPhone 11 Deals</a></li>
+                                                        <li><a href="#">Samsung Galaxy S23 Deals</a></li>  
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item nav-list-item hover-effect">
+                                    <a class="nav-link" href="/">Business</a>
+
+                                    <div class="submenu">
+                                        <div class="submenu-container">
+                                            <div class="sub-menu">
+                                                <div class="sub-menu-column">
+                                                    <h2>Insurance</h2>
+                                                    <ul>
+                                                        <li><a href="#">Business Insurance</a></li>
+                                                        <li><a href="#">Public Liability Insurance</a></li>
+                                                        <li><a href="#">Business Van Insurance</a></li>
+                                                        <li><a href="#">Business Travel Insurance</a></li>
+                                                        <li><a href="#">Business Car Insurance</a></li> 
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Banking</h2>
+                                                    <ul>
+                                                        <li><a href="#">Business Bank Accounts</a></li>
+                                                        <li><a href="#">Business Finance</a></li>
+                                                        <li><a href="#">Business Savings Accounts</a></li>
+                                                        <li><a href="#">Prepaid Business Cards</a></li>   
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Energy</h2>
+                                                    <ul>
+                                                        <li><a href="#">Business Energy</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="sub-menu-column">
+                                                    <h2>Broadband & Phones</h2>
+                                                    <ul>
+                                                        <li><a href="#">Business Broadband</a></li>
+                                                        <li><a href="#">See All Business</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </header>
+            <section id="main">
+                <div class="container-custom">
+                    <div class="main-content">
+                        <div class="brand-image">
+                            <div class="branding">
+                                <h1 class="hero-heading">Find The UK’s BEST Fixed Rate Investments!</h1>
+                                <p class="hero-paragraph">
+                                    <ul class="hero-paragraph--list">
+                                        <li>Protected for up to £85,000 per applicant by the FSCS</li>
+                                        <li>Exclusive higher rates that you wont see anywhere else</li>
+                                        <li>Promotional rates of up to 6.75% (for a limited time only)</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <img src="./assets/images/brand-image.png" alt="brand Image">
+                        </div>
+                        <div class="rates-form">
+                            <div class="brand-form">
+                                <form action="void:javascript" id="exclusive-rates-form">
+                                    <div class="form-contents">
+                                        <h2 class="font-title">Exclusive Rates for a Limited Time Only!</h2>
+                                        <div class="form-fields">
+                                            <div class="full-name">
+                                                <label for="fullname">Full Name</label>
+                                                <input type="text" id="fullname" name="name" id="from_name" required placeholder="Full Name">
+                                                <span class="message-error" id="name-error"></span>
+                                            </div>
+                                            <div class="email-address">
+                                                <label for="email">Email Address</label>
+                                                <input type="email" name="email" id="email" placeholder="Email" required id="email_address">
+                                            </div>
+                                            <div class="telephone">
+                                                <label for="telephone">Telephone Number</label>
+                                                <input type="text" name="telephone" id="telephone" required placeholder="Telephone Number" id="telephone_number">
+                                                <span class="message-error" id="telephone-error"></span>
+                                            </div>
+                                            <div class="investment">
+                                                <label for="investment">Investment Amount</label>
+                                                <select name="investment" id="investment" placeholder="Investment Amount" id="investment_amount">
+                                                    <option value="0" selected>Select Investment</option>
+                                                    <option value="£5,000 - £10,000" >£5,000 - £10,000</option>
+                                                    <option value="£10,000 - £25,000" >£10,000 - £25,000</option>
+                                                    <option value="£25,000 - £50,000" >£25,000 - £50,000</option>
+                                                    <option value="£50,000 - £100,000" >£50,000 - £100,000</option>
+                                                    <option value="£100,000 plus" >£100,000 +</option>
+                                                </select>
+                                                <span class="message-error" id="invest-error"></span>
+                                            </div>
+                                            <div class="investmentStart">
+                                                <label for="investmentStart">Investment Start</label>
+                                                <select name="investmentStart" id="investmentStart" placeholder="Select Timeframe" id="select_timeframe">
+                                                    <option value="0" selected>Select Starting Timeframe</option>
+                                                    <option value="ASAP">ASAP</option>
+                                                    <option value="This Week">This Week</option>
+                                                    <option value="Next Week">Next Week</option>
+                                                    <option value="This Month">This Month</option>
+                                                    <option value="Next Month">Next Month</option>
+                                                </select>
+                                                <span class="message-error" id="inv-start-error"></span>
+                                            </div>
+                                            <div class="submit">
+                                                <button type="submit" id="button-submit-form" class="button submit-button">Show Exclusive Rates</button>
+                                                <span class="message" id="form-message"></span>
+                                            </div>
+                                        </div>
+                                        <div class="otherwise">
+                                            <div class="or">
+                                                <span class="line"></span>
+                                                <span class="or-text">or</span>
+                                                <span class="line"></span>
+                                            </div>
+                                            <div class="or-button">
+                                                <a href="https://www.moneysupermarket.com/savings/goals/?goal=SAV_EASYACCESS" class="button button-or">Show Me Regular Rates</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+                <div class="footer-container">
+
+                    <div class="footer-contents">
+                        <div class="footer-logo">
+                            <img src="./assets/images/logo.svg" alt="Money Super Market">
+                        </div>
+                        <div class="footer-nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Accessibility</a></li>
+                                    <li><a href="">Careers</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Investor Relation</a></li>
+                                    <li><a href="">About our service</a></li>
+                                    <li><a href="">Preference Center</a></li>
+                                    <li><a href="">Privacy</a></li>
+                                    <li><a href="">Security</a></li>
+                                    <li><a href="">Terms and Condition</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-description">
+                            <p>We use cookies to give you the best experience. By using our website you agree to our use of cookies in accordance with our Cookie Policy. <a href="" class="manage-cookies">You can manage your cookies here.</a></p>
+                            <p>Moneysupermarket.com Limited is an appointed representative of Moneysupermarket.com Financial Group Limited, which is authorised and regulated by the Financial Conduct Authority (FCA FRN 303190). Please note, the following
+                                products are not regulated by the FCA; travel money, legal services, mobile phones, money transfer, broadband, energy (excluding boiler cover) and travel services (excluding travel insurance and car hire excess insurance).</p>
+                            <p>Moneysupermarket.com Financial Group Limited, registered in England No. 3157344. Registered Office: Moneysupermarket House, St. David's Park, Ewloe, CH5 3UZ.</p>
+                        </div>
+                        <div class="footer-socials">
+                            <div class="footer-brand-logo">
+                                <img src="./assets/images/award.png" alt="Gold Trusted Service Award">
+                            </div>
+                            <div class="footer-social-medias">
+                                <p><a href="#">Learn more about The MoneySuperMarket app</a> or download it from</p>
+                                <div class="social-media-handles">
+                                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('rSJ5tgLfFX5Af4gZV');
+
+    </script>
+</body>
+</html>
